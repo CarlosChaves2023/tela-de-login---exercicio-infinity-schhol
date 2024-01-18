@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity School</title>
+    <style>
+        body{
+            background-image: linear-gradient(to bottom ,black, red);
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div{
+            width: 380px;
+            height: 300px;
+            border-radius: 10px;
+            text-align: center;
+            margin: auto;
+            margin-top: calc(25vh);
+            background-image: linear-gradient(to top, black, red);
+            background-attachment: fixed;   
+        }
+     
+
+        h1{
+            text-align: center;
+            padding: 30px;
+        }
+
+        p.acesso{
+            font-weight: bolder;
+        }
+
+        input.dados{
+            width: 200px;
+            height: 20px;
+            border-radius: 10px;
+        }
+
+        .dados:hover{
+            font-size: large;
+        }
+
+        input#entrar:hover{
+            font-size: medium;
+        }
+
+        nav{
+            color: red;
+        }
+
+        a{
+            color: blue;
+        }
+
+        a:hover{
+            font-weight: bolder;
+            font-size: large;
+        }
+
+        footer{
+            padding: 10px;
+            color: red;
+        }
+
+        footer:hover{
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+   <div>
+    <header>
+        <h1>Bem Vindo</h1>
+    </header>
+
+    <main>
+        <p class="acesso">
+            <label for="email">E_mail: </label>
+            <input class="dados" type="text"name="email" id="email" placeholder="ex:infinityschool@infinity.com" required>
+        </p>
+        
+        <p class="acesso">
+            <label for="senha">Senha:</label>
+            <input class="dados" type="password" name="senha" id="senha" placeholder="de 6 a 20 caracteres" minlength="6" maxlength="20" required>
+        </p>
+        <p >
+            <input type="submit" value="Entrar" id="entrar">
+        </p>
+        <nav><a href="">Esqueceu sua senha</a></nav>
+    </main>
+
+    <footer>
+        &reginfinityschool
+    </footer>
+   </div>
+    
+</body>
+</html>
